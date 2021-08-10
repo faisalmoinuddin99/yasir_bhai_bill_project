@@ -89,10 +89,14 @@
     <span class="form-group">
         <label for="percentage">CGST Percentage*</label>
         <select name="percentage" required id="percentage">
-        <option value=5>5%</option>
-        <option value=12>12%</option>
-        <option value=18>18%</option>
-        <option value=28>28%</option>
+        <?php
+    for ($i=1; $i<=100; $i++)
+    {
+        ?>
+            <option value="<?php echo $i;?>"><?php echo $i."%";?></option>
+        <?php
+    }
+    ?>
         
         
 </select>
@@ -101,12 +105,19 @@
 <span class="form-group">
         <label for="spercentage">SGST Percentage*</label>
         <select name="spercentage" required id="spercentage">
-        <option value=5>5%</option>
-        <option value=12>12%</option>
-        <option value=18>18%</option>
-        <option value=28>28%</option>
+        <?php
+    for ($i=1; $i<=100; $i++)
+    {
+        ?>
+            <option value="<?php echo $i;?>"><?php echo $i."%";?></option>
+        <?php
+    }
+?>
   
 </select>
+
+</span>
+
 
 </span>
     <div class="form-group">

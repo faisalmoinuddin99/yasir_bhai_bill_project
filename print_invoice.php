@@ -213,12 +213,12 @@
                                                         <tr>
                                                             <td><?php echo "CGST Amount" ; ?></td>
                                                            
-                                                            <td class="alignright"><?php echo $cgstAmount." ₹"?></td>
+                                                            <td class="alignright"><?php echo round($cgstAmount,2)." ₹"?></td>
                                                         </tr>
                                                         <tr>
                                                             <td><?php echo "SGST Amount" ; ?></td>
                                                            
-                                                            <td class="alignright"><?php echo $sgstAmount." ₹"?></td>
+                                                            <td class="alignright"><?php echo round($sgstAmount,2)." ₹"?></td>
                                                         </tr>
                                                         <tr class="total">
                                                             <td class="alignright" width="80%">Grand Total</td>
